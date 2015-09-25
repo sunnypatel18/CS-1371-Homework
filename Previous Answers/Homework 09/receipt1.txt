@@ -1,0 +1,18 @@
+CS1371 Grocery Store
+
+05-07-2010
+Tim Tebow
+XXXX-XXXX-XXXX-8629
+
+4x Tomatoes     4.40
+1x Air Freshner     6.99
+2x Milk     4.60
+1x Detergent     9.89
+5x Nuts     54.95
+1x Tea     3.50
+6x Muesli Bar     20.40
+5x Pickles     40.00
+2x Cake     11.20
+1x Bleach     7.59
+Tax     16.35
+Total     179.87

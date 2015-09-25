@@ -1,0 +1,25 @@
+Swap Quadrants: Q1,Q3
+Swap Quadrants: Q2,Q4
+Rotate: Q1
+Rotate: Q3
+Rotate: Q4
+Rotate: Q2
+Swap Quadrants: Q1,Q2
+Swap Quadrants: Q2,Q3
+Swap Quadrants: Q3,Q4
+Swap Quadrants: Q4,Q1
+Swap Quadrants: Q1,Q3
+Swap Quadrants: Q2,Q4
+Rotate: Q1
+Rotate: Q3
+Rotate: Q4
+Rotate: Q2
+Swap Quadrants: Q1,Q2
+Swap Quadrants: Q2,Q3
+Swap Quadrants: Q3,Q4
+Swap Quadrants: Q4,Q1
+Rotate: Q1
+Rotate: Q3
+Rotate: Q4
+
+

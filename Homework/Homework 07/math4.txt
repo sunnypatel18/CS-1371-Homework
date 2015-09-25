@@ -1,0 +1,4 @@
+Add 7
+Subtract 15
+Multiply 3
+Add 10

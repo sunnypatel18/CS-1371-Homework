@@ -1,0 +1,75 @@
+% PROBLEM 4.  Finding Printer Jobs 
+%--------------------------------------------------------------------------
+%
+% Function Name: findPrintJob
+% Inputs  (2): - (struct)       A structure as described below
+%                (char)         The name of a print job to search for
+% Outputs (1): - (struct/char)  The print job, if found, or the string
+%                               'Not Found'
+%
+% Function Description:
+%   Often, printers will store their pending print jobs in a data structure
+%   known as a linked list. A linked list is simply a set of nodes where
+%   each node has some data as well as a refrence to the next node. In this
+%   problem we will represent a linked list using nested structures.
+%
+%   Given a structure representing a linked list of print jobs and the name
+%   of a job to search for, write a function called "findPrintJob" that will
+%   return the structure representing the print job with that name if
+%   found, or the string 'Not Found' otherwise.
+%   
+%   The input structure will have 3 fields: 'name', 'pages', and 'next'.
+%   'name' is simply the name of the print job, 'pages' is the number of
+%   pages to print, and 'next' holds either the job to be printed after
+%   this job, or an empty vector ([]). For example, if we had 2 jobs in
+%   queue, we might have a setup like this:
+%
+%       Job1
+%           name: 'job1'
+%           pages: 100
+%           next: [1x1 struct] <- This represents Job2
+%     
+%       Job2
+%           name: 'job2'
+%           pages: 1000
+%           next: []  <- Since there's nothing to print after Job2
+%
+%   Your output structure should be the structure with the same name as the
+%   input name, but with the next field removed. So if we use the example
+%   above, j2 = findPrintJob(Job1, 'job2') should return:
+%
+%   j2 = name: 'job2'
+%        pages: 1000
+function job = findPrintJob(struct, name)
+    % Loop through every job until the last
+    while class(struct.next) == 'struct'
+        
+        if strcmp(struct.name, name)
+            job.name = struct.name
+            job.pages = struct.pages
+            break
+        else
+            job = 'Not Found'
+        end
+    end
+    
+end    
+% Hints:
+%	- You may find the function rmfield() useful.
+%   - The p-file 'buildQueue.p' has been provided for your convenience.  It
+%     can create test cases for this problem. As an example, to create the
+%     example above, we would call
+%               str = buildQueue({'job1' 'job2'}, [100 1000])
+%     str is then a structure representing the linked list described
+%     above.
+%
+% Test Cases:
+%	s = buildQueue({'MATLAB test', 'Essay', 'Thesis'}, [100,  5, 9001]);
+%
+%   job1 = findPrintJob(s, 'Thesis')
+%       job1 =>
+%           name: 'Thesis'
+%           pages: 9001
+%
+%	job2 = findPrintJob(s, 'My Homework')
+%       job2 => 'Not Found'

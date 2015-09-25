@@ -1,0 +1,40 @@
+function [out] = imageInterp(image,new_row,new_col)
+[row,col,layer] = size(image);
+row = double(row);
+col = double(col);
+layer = double(layer);
+red = image(:,:,1);
+green = image(:,:,2);
+blue = image(:,:,3);
+red = double(red);
+green = double(green);
+blue = double(blue);
+red2 = [];
+green2 = [];
+blue2 = [];
+a = 1;
+while a<=row
+   new_red = interp1(1:col,red(a,:),linspace(1,col,new_col));
+   new_green = interp1(1:col,green(a,:),linspace(1,col,new_col));
+   new_blue = interp1(1:col,blue(a,:),linspace(1,col,new_col));
+   red2 = [red2;new_red];
+   green2 = [green2;new_green];
+   blue2 = [blue2;new_blue];
+   a = a+1;
+end
+[row,col] = size(red2);
+red3 = [];
+green3 = [];
+blue3 = [];
+a = 1;
+while a<=col
+   new_red = interp1(1:row,red2(:,a)',linspace(1,row,new_row));
+   new_green = interp1(1:row,green2(:,a)',linspace(1,row,new_row));
+   new_blue = interp1(1:row,blue2(:,a)',linspace(1,row,new_row));
+   red3 = [red3,new_red'];
+   green3 = [green3,new_green'];
+   blue3 = [blue3,new_blue'];
+   a = a+1;
+end
+out = uint8(cat(3,red3,green3,blue3));
+end

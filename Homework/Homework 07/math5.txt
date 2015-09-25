@@ -1,0 +1,6 @@
+Multiply 4
+Add 9
+Divide 6
+Subtract 2
+Subtract 3
+Add 1

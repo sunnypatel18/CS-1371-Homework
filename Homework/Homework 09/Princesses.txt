@@ -1,0 +1,6 @@
+{
+"Princess": ["Aurora", "Belle", "Cinderella", "Tiana"]
+"DateOfRelease": [1959, 1991, 1950, 2009]
+"Oldest": 1950
+"MostPopular": "Belle"
+}

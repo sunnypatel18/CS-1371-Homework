@@ -1,0 +1,5 @@
+{
+"BoxesEach": [5, 20, 10, 14, 16]
+"Total": 65
+"Flavors": ["Coke", "DietCoke", "Fanta", "Sprite"]
+}

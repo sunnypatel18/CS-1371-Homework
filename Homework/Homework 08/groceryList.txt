@@ -1,0 +1,4 @@
+Item: Pickles, Cost: 2.40, Quantity: 4
+Item: Pudding cups, Cost: 1.00, Quantity: 6
+Item: Sprinkles, Cost: 7.00, Quantity: 16
+Item: Apple Slices, Cost: 2.50, Quantity: 35

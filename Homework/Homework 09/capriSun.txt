@@ -1,0 +1,6 @@
+{
+"Flavors": ["FruitPunch", "SurferCooler", "WildCherry", "StrawberryKiwi", "PacificCooler"]
+"BoxesEach": [5, 20, 10, 14, 16]
+"Total": 65
+"MostPopular": "SurferCooler"
+}

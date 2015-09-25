@@ -1,0 +1,4 @@
+{
+"Types": ["RedDelicious", "GrannySmith", "SummerYellow"]
+"NumberPicked": 99
+}

@@ -1,0 +1,17 @@
+CS1371 Grocery Store
+
+12-09-2011
+David Smith
+XXXX-XXXX-XXXX-1836
+
+3x Matches     16.80
+4x Dozen Eggs     13.64
+1x Milk     2.30
+2x Lotion     9.34
+1x Tea     3.50
+2x Soup     4.20
+2x Pickles     16.00
+1x Bananas     1.05
+4x Dog Food     29.00
+Tax     9.58
+Total     105.41
